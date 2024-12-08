@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where do you want to go?</title>
+    <link rel="stylesheet" href="pickadd.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="header">Where do you want to go?</div>
+        <div class="menu-grid">
+            <div class="menu-item"><img src="https://www.myanmartours.net/userfiles/images/botanical-garden.jpg" alt="POL"><p>Pyin Oo Lwin</p></div>
+            <div class="menu-item"><img src="https://wallpapercave.com/wp/wp4191060.jpg" alt="Ice Cream"><p>Bagan</p></div>
+            <div class="menu-item"><img src="https://cdn.sanity.io/images/ul272611/production/818e66919527074268c73f2827855d652c9a7df6-4032x3024.jpg?rect=0,172,4032,2679&w=572&h=380&fit=max&auto=format" alt="Food 3"><p>Kalaw</p></div>
+            <div class="menu-item"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Mount_Taung_Wine.jpg" alt="Food 4"><p>Hpa An</p></div>
+        </div>
+        <button class="submit-button" id="continue">Continue</button>
+    </div>
+    <script>
+        const menuItems = document.querySelectorAll('.menu-item');
+    
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('selected');  // Toggle the 'selected' class
+            });
+        });
+
+        document.getElementById("continue").addEventListener("click", function() {
+    // Redirect to the next page
+    window.location.href = "sys.html";
+  });  
+    </script>
+</body>
+</html>

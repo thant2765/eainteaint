@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What do you want to eat?</title>
+    <link rel="stylesheet" href="pick.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="header">What do you want to eat?</div>
+        <div class="menu-grid">
+            <div class="menu-item"><img src="https://coca.com.sg/wp-content/uploads/2020/10/COCA-6-23.jpg" alt="Hotpot"><p>Hot Pot</p></div>
+            <div class="menu-item"><img src="https://cdn.prod.website-files.com/5e9ebc3fff165933f19fbdbe/61b31c9d289e22335b6753b2_Ice%20Cream%202.jpg" alt="Ice Cream"><p>Ice Cream</p></div>
+            <div class="menu-item"><img src="https://my-test-11.slatic.net/original/69a95c5130a3bf5606c3802e604cce3e.jpg" alt="Food 3"><p>Mukahta</p></div>
+            <div class="menu-item"><img src="https://www.inspiredtaste.net/wp-content/uploads/2023/08/Cheese-Pizza-2-1200.jpg" alt="Food 4"><p>Pizza</p></div>
+            <div class="menu-item"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf3_kmmbx88Zzr4FdmxAQzpsAFKp-K9woiAIW2zvjde3IGafRJ_1syHizo8yiBwth9jITRNzo_8KWOV_M_lnaJBpaqxxjdWwgMl_mUY_5uMLgKyNJuplM5QJ4yc2LXdwY9l4coF-xbcUx8/s2048/Mala+Xiang+Guo.jpg" alt="Food 5"><p>Mala Xiang Guo</p></div>
+            <div class="menu-item"><img src="photo_2024-12-08_14-53-43.jpg" alt="Food 6"><p>Noodles</p></div>
+            <div class="menu-item"><img src="https://instantpotcooking.com/wp-content/uploads/2023/06/Instant-Pot-Fried-Chicken-700x467.jpg" alt="Food 7"><p>Fried Chicken</p></div>
+            <div class="menu-item"><img src="https://giadzy.com/cdn/shop/articles/lemon_spaghetti_in_a_box.jpg?v=1682356158" alt="Food 8"><p>Spaghetti</p></div>
+        </div>
+        <button class="submit-button" id="continue">Continue</button>
+    </div>
+    <script>
+        const menuItems = document.querySelectorAll('.menu-item');
+    
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('selected');  // Toggle the 'selected' class
+            });
+        });
+
+        document.getElementById("continue").addEventListener("click", function() {
+    // Redirect to the next page
+    window.location.href = "pickadd.html";
+  });  
+    </script>
+</body>
+</html>
